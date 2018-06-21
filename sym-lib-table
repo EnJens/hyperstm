@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name HyperRAM)(type Legacy)(uri /home/rayman/electronics/hyperstm/libs/HyperRAM.lib)(options "")(descr ""))
+  (lib (name MCU_ST_STM32L4+)(type Legacy)(uri ${KIPRJMOD}/libs/MCU_ST_STM32L4+.lib)(options "")(descr ""))
+)

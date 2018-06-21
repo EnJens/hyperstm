@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+LIBS:hyperstm-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HyperRAM:S27KL0641 U1
+U 1 1 5B2BF0A0
+P 9400 3450
+F 0 "U1" H 9400 4415 50  0000 C CNN
+F 1 "S27KL0641" H 9400 4324 50  0000 C CNN
+F 2 "BGA_Extra:BGA-25_5x5_6.0x8.0mm" H 9400 3450 50  0001 C CNN
+F 3 "" H 9400 3450 50  0001 C CNN
+	1    9400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR01
+U 1 1 5B2BF1B0
+P 9900 2650
+F 0 "#PWR01" H 9900 2500 50  0001 C CNN
+F 1 "VDD" H 9917 2823 50  0000 C CNN
+F 2 "" H 9900 2650 50  0001 C CNN
+F 3 "" H 9900 2650 50  0001 C CNN
+	1    9900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2800 9900 2800
+Wire Wire Line
+	9900 2800 9900 2650
+$Comp
+L power:GND #PWR02
+U 1 1 5B2BF2A5
+P 9900 4050
+F 0 "#PWR02" H 9900 3800 50  0001 C CNN
+F 1 "GND" H 9905 3877 50  0000 C CNN
+F 2 "" H 9900 4050 50  0001 C CNN
+F 3 "" H 9900 4050 50  0001 C CNN
+	1    9900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3900 9900 3900
+Wire Wire Line
+	9900 3900 9900 4050
+$Comp
+L Connector_Generic:Conn_01x12 J1
+U 1 1 5B2BF4B9
+P 8500 3400
+F 0 "J1" H 8420 2575 50  0000 C CNN
+F 1 "Conn_01x12" H 8420 2666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 8500 3400 50  0001 C CNN
+F 3 "~" H 8500 3400 50  0001 C CNN
+	1    8500 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 2800 8700 2800
+Wire Wire Line
+	9000 2900 8700 2900
+Wire Wire Line
+	9000 3000 8700 3000
+Wire Wire Line
+	9000 3100 8700 3100
+Wire Wire Line
+	9000 3200 8700 3200
+Wire Wire Line
+	9000 3300 8700 3300
+Wire Wire Line
+	9000 3400 8700 3400
+Wire Wire Line
+	9000 3500 8700 3500
+Wire Wire Line
+	9000 3600 8700 3600
+Wire Wire Line
+	9000 3700 8700 3700
+Wire Wire Line
+	9000 3800 8700 3800
+Wire Wire Line
+	9000 3900 8700 3900
+Text Label 8750 2800 0    50   ~ 0
+~CS~
+Text Label 8750 2900 0    50   ~ 0
+CK
+Text Label 8750 3000 0    50   ~ 0
+DQ0
+Text Label 8750 3100 0    50   ~ 0
+DQ1
+Text Label 8750 3200 0    50   ~ 0
+DQ2
+Text Label 8750 3300 0    50   ~ 0
+DQ3
+Text Label 8750 3400 0    50   ~ 0
+DQ4
+Text Label 8750 3500 0    50   ~ 0
+DQ5
+Text Label 8750 3600 0    50   ~ 0
+DQ6
+Text Label 8750 3700 0    50   ~ 0
+DQ7
+Text Label 8750 3800 0    50   ~ 0
+RWDS
+Text Label 8750 3900 0    50   ~ 0
+~RESET~
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5B2BFDDD
+P 10000 2800
+F 0 "#FLG0101" H 10000 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 10000 2928 50  0000 L CNN
+F 2 "" H 10000 2800 50  0001 C CNN
+F 3 "~" H 10000 2800 50  0001 C CNN
+	1    10000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5B2BFDF5
+P 10000 3900
+F 0 "#FLG0102" H 10000 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 10000 4028 50  0000 L CNN
+F 2 "" H 10000 3900 50  0001 C CNN
+F 3 "~" H 10000 3900 50  0001 C CNN
+	1    10000 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 3900 9900 3900
+Connection ~ 9900 3900
+Wire Wire Line
+	10000 2800 9900 2800
+Connection ~ 9900 2800
+$Comp
+L MCU_ST_STM32L4+:STM32L4R9VGTx U?
+U 1 1 5B2C07E6
+P 3450 4000
+F 0 "U?" H 3400 1214 50  0000 C CNN
+F 1 "STM32L4R9VGTx" H 3400 1123 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2450 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00366448.pdf" H 3450 4000 50  0001 C CNN
+	1    3450 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2250 2000
+NoConn ~ 2250 2100
+NoConn ~ 2250 2200
+NoConn ~ 2250 2300
+$EndSCHEMATC
