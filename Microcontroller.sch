@@ -327,27 +327,14 @@ Connection ~ 3500 1850
 $Comp
 L power:GND #PWR?
 U 1 1 5B83B97B
-P 3500 1250
+P 2950 1250
 AR Path="/5B83B97B" Ref="#PWR?"  Part="1" 
 AR Path="/5B839BF3/5B83B97B" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 3500 1000 50  0001 C CNN
-F 1 "GND" H 3505 1077 50  0000 C CNN
-F 2 "" H 3500 1250 50  0001 C CNN
-F 3 "" H 3500 1250 50  0001 C CNN
-	1    3500 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5B83B981
-P 1350 1050
-AR Path="/5B83B981" Ref="C?"  Part="1" 
-AR Path="/5B839BF3/5B83B981" Ref="C1"  Part="1" 
-F 0 "C1" H 1450 1150 50  0000 R CNN
-F 1 "10uF" H 1550 1000 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1350 1050 50  0001 C CNN
-F 3 "~" H 1350 1050 50  0001 C CNN
-	1    1350 1050
+F 0 "#PWR0101" H 2950 1000 50  0001 C CNN
+F 1 "GND" H 2955 1077 50  0000 C CNN
+F 2 "" H 2950 1250 50  0001 C CNN
+F 3 "" H 2950 1250 50  0001 C CNN
+	1    2950 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -455,22 +442,11 @@ Wire Wire Line
 	1650 1200 1650 1150
 Connection ~ 1900 1200
 Wire Wire Line
-	1650 1200 1350 1200
-Wire Wire Line
-	1350 1200 1350 1150
-Connection ~ 1650 1200
-Wire Wire Line
-	1350 900  1650 900 
-Wire Wire Line
 	1650 900  1650 950 
-Connection ~ 1350 900 
-Wire Wire Line
-	1350 900  1350 950 
 Wire Wire Line
 	1650 900  1900 900 
 Wire Wire Line
 	1900 900  1900 950 
-Connection ~ 1650 900 
 Wire Wire Line
 	1900 900  2150 900 
 Wire Wire Line
@@ -491,30 +467,6 @@ Wire Wire Line
 Wire Wire Line
 	2950 900  2950 950 
 Connection ~ 2700 900 
-$Comp
-L Device:C_Small C?
-U 1 1 5B83B9D7
-P 3200 1050
-AR Path="/5B83B9D7" Ref="C?"  Part="1" 
-AR Path="/5B839BF3/5B83B9D7" Ref="C8"  Part="1" 
-F 0 "C8" H 3200 1150 50  0000 L CNN
-F 1 "100nF" H 3200 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3200 1050 50  0001 C CNN
-F 3 "~" H 3200 1050 50  0001 C CNN
-	1    3200 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 900  3200 900 
-Wire Wire Line
-	3200 900  3200 950 
-Connection ~ 2950 900 
-Wire Wire Line
-	2950 1200 3200 1200
-Connection ~ 2950 1200
-Wire Wire Line
-	3200 1200 3200 1150
-Connection ~ 3200 1200
 $Comp
 L power:GND #PWR?
 U 1 1 5B83B9E5
@@ -563,43 +515,16 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5B83B9FC
-P 1350 800
+P 1650 800
 AR Path="/5B83B9FC" Ref="#PWR?"  Part="1" 
 AR Path="/5B839BF3/5B83B9FC" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 1350 650 50  0001 C CNN
-F 1 "+3V3" H 1365 973 50  0000 C CNN
-F 2 "" H 1350 800 50  0001 C CNN
-F 3 "" H 1350 800 50  0001 C CNN
-	1    1350 800 
+F 0 "#PWR0105" H 1650 650 50  0001 C CNN
+F 1 "+3V3" H 1665 973 50  0000 C CNN
+F 2 "" H 1650 800 50  0001 C CNN
+F 3 "" H 1650 800 50  0001 C CNN
+	1    1650 800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 800  1350 900 
-$Comp
-L Device:C_Small C?
-U 1 1 5B83BA03
-P 3500 1050
-AR Path="/5B83BA03" Ref="C?"  Part="1" 
-AR Path="/5B839BF3/5B83BA03" Ref="C9"  Part="1" 
-F 0 "C9" H 3500 1150 50  0000 L CNN
-F 1 "100nF" H 3500 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 1050 50  0001 C CNN
-F 3 "~" H 3500 1050 50  0001 C CNN
-	1    3500 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 900  3500 900 
-Wire Wire Line
-	3500 900  3500 950 
-Connection ~ 3200 900 
-Wire Wire Line
-	3500 1200 3500 1150
-Wire Wire Line
-	3200 1200 3500 1200
-Wire Wire Line
-	3500 1200 3500 1250
-Connection ~ 3500 1200
 NoConn ~ 2300 6750
 NoConn ~ 2300 7050
 NoConn ~ 2300 7150
@@ -1015,11 +940,11 @@ Wire Wire Line
 Wire Wire Line
 	10200 2900 10350 2900
 $Comp
-L Device:C_Small C11
+L Device:C_Small C1
 U 1 1 5B852BB1
 P 10350 3050
-F 0 "C11" H 10442 3096 50  0000 L CNN
-F 1 "1uF" H 10442 3005 50  0000 L CNN
+F 0 "C1" H 10442 3096 50  0000 L CNN
+F 1 "10uF" H 10442 3005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10350 3050 50  0001 C CNN
 F 3 "~" H 10350 3050 50  0001 C CNN
 	1    10350 3050
@@ -1059,4 +984,9 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf" H 9750 3000 50
 	1    9750 3000
 	1    0    0    -1  
 $EndComp
+Text Label 8900 2900 0    50   ~ 0
+VBUS
+Wire Wire Line
+	1650 900  1650 800 
+Connection ~ 1650 900 
 $EndSCHEMATC

@@ -317,7 +317,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 4600 3400 4300
 $Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise J4
+L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5B93BE7D
 P 3500 4000
 F 0 "J4" V 3504 4280 50  0000 L CNN
